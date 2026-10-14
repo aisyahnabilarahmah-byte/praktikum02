@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Goose Bistro | Pizza-on-Demand</title>
+</head>
+<body>
+
+<h1>Black Goose Bistro | Pizza-on-Demand</h1>
+
+<p>
+    Our 12" wood-fired pizzas are available for delivery.
+    Build your custom pizza and we'll deliver it within an hour.
+</p>
+
+<form action="#hasil" method="get">
+
+    <h3>Your Information</h3>
+
+    <p>
+        Name:
+        <input type="text" name="customername" required>
+        <br>
+
+        Address:
+        <input type="text" name="address" required>
+        <br>
+
+        Telephone Number:
+        <input type="tel" name="telephone" required>
+        <br>
+
+        Email:
+        <input type="email" name="email" required>
+    </p>
+
+    <p>
+        Delivery instructions:
+        <br>
+        <textarea name="instructions" rows="4" cols="40"
+        maxlength="400"
+        placeholder="No more than 400 characters long"></textarea>
+    </p>
+
+    <hr>
+
+    <h3>Design Your Dream Pizza:</h3>
+
+    <h4>Pizza specs</h4>
+
+    <p>Crust (Choose one):</p>
+
+    <input type="radio" name="crust" value="Classic white" required>
+    Classic white<br>
+
+    <input type="radio" name="crust" value="Multigrain">
+    Multigrain<br>
+
+    <input type="radio" name="crust" value="Cheese-stuffed crust">
+    Cheese-stuffed crust<br>
+
+    <input type="radio" name="crust" value="Gluten-free">
+    Gluten-free<br>
+
+    <h4>Toppings (Choose as many as you want):</h4>
+
+    <input type="checkbox" name="toppings[]" value="Red sauce" checked>
+    Red sauce<br>
+
+    <input type="checkbox" name="toppings[]" value="White sauce">
+    White sauce<br>
+
+    <input type="checkbox" name="toppings[]" value="Mozzarella Cheese">
+    Mozzarella Cheese<br>
+
+    <input type="checkbox" name="toppings[]" value="Pepperoni">
+    Pepperoni<br>
+
+    <input type="checkbox" name="toppings[]" value="Mushrooms">
+    Mushrooms<br>
+
+    <input type="checkbox" name="toppings[]" value="Peppers">
+    Peppers<br>
+
+    <input type="checkbox" name="toppings[]" value="Anchovies">
+    Anchovies<br>
+
+    <h4>Number</h4>
+
+    <label for="pizzas">How many pizzas:</label>
+    <select name="number" id="pizzas">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Bring me a pizza!">
+    <input type="reset" value="Reset">
+
+</form>
+
+<hr>
+
+<h1 id="hasil">THANK YOU</h1>
+
+<p>
+    Thank you for ordering from Black Goose Bistro.
+    We have received the following information about your order:
+</p>
+
+<h3>Your Information</h3>
+
+<p><b>Name:</b> Jennifer Robbins</p>
+<p><b>Address:</b> 123 Street</p>
+<p><b>Telephone Number:</b> 555-51212</p>
+<p><b>Email Address:</b> jen@example.com</p>
+<p>
+    <b>Delivery instructions:</b>
+    Ring the middle buzzer. If nobody answers, text me.
+</p>
+
+<h3>Your pizza</h3>
+
+<p><b>Crust:</b> white</p>
+<p>
+    <b>Toppings:</b>
+    red sauce, mozzarella, pepperoni, mushrooms
+</p>
+<p><b>Number:</b> 1</p>
+
+<hr>
+
+<p>This site is for educational purposes only. No pizzas will be delivered.</p>
+
+</body>
+</html>
